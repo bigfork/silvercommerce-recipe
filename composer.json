@@ -23,7 +23,7 @@
         "silverstripe/silverstripe-omnipay": "dev-master",
         "colymba/gridfield-bulk-editing-tools": "dev-master",
         "nathancox/hasoneautocompletefield": "2.x-dev",
-        "wilr/silverstripe-googlesitemaps": "^1.8",
+        "wilr/silverstripe-googlesitemaps": "dev-master",
         "axllent/silverstripe-scaled-uploads": "^2.1",
         "i-lateral/silverstripe-childhubpage": "^2.0",
         "jonom/focuspoint": "ss4-upgrade-dev",
