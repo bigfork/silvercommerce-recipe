@@ -1,3 +1,6 @@
+# ignore workspace files
+/.vscode/
+
 # ignore cache folder
 /silverstripe-cache/
 
