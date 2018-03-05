@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
     "name": "silvercommerce/silvercommerce-recipe",
-=======
-    "name": "i-lateral/silvercommerce-recipe",
->>>>>>> 5e23532fc68a4251c0098157bb4f811f6a17c8ea
     "type": "silverstripe-recipe",
     "description": "SilverStripe recipe for fully featured page and asset content editing",
     "homepage": "http://silverstripe.org",
