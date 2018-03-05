@@ -1,0 +1,7 @@
+---
+Name: payment
+---
+SilverStripe\Omnipay\Model\Payment:
+  file_logging: "verbose"
+  allowed_gateways:
+    - 'Dummy'

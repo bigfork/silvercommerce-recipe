@@ -3,6 +3,8 @@ Name: application
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
+
+## EXTENSIONS ##
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - AppSiteConfig
@@ -12,13 +14,23 @@ SilverStripe\Blog\Model\Blog:
 SilverStripe\Blog\Model\BlogPost:
   extensions:
     - SilverStripe\Widgets\Extensions\WidgetPageExtension
+
+## CONFIG ##
 Axllent\ScaledUploads\ScaledUploads:
   max_width: 1920
   max_height: 1920
 ilateral\SilverStripe\Searchable\Searchable:
   objects:
     "Page": ["Title","MenuTitle","Content","URLSegment"]
-
+    "Product": ["Title","Content","URLSegment"]
+    "Category": ["Title","Content","URLSegment"]
+ilateral\SilverStripe\CustomMenus\Model\CustomMenuLink:
+  base_classes:
+    'Category': "A Product Category"
+    "Product": "A Product"
 SilverStripe\Core\Injector\Injector:
   Fractas\CookiePolicy\CookiePolicy:
     class: AppCookiePolicy
+ilateral\SilverStripe\Users\Users:
+  require_verification: true
+  send_verification_email: true
