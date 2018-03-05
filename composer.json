@@ -1,5 +1,5 @@
 {
-    "name": "i-lateral/ss4-recipe",
+    "name": "silvercommerce/silvercommerce-recipe",
     "type": "silverstripe-recipe",
     "description": "SilverStripe recipe for fully featured page and asset content editing",
     "homepage": "http://silverstripe.org",
