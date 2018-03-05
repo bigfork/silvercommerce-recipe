@@ -8,12 +8,6 @@ SilverStripe\Core\Manifest\ModuleManifest:
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - AppSiteConfig
-SilverStripe\Blog\Model\Blog:
-  extensions:
-    - SilverStripe\Widgets\Extensions\WidgetPageExtension
-SilverStripe\Blog\Model\BlogPost:
-  extensions:
-    - SilverStripe\Widgets\Extensions\WidgetPageExtension
 
 ## CONFIG ##
 Axllent\ScaledUploads\ScaledUploads:
@@ -28,9 +22,6 @@ ilateral\SilverStripe\CustomMenus\Model\CustomMenuLink:
   base_classes:
     'Category': "A Product Category"
     "Product": "A Product"
-SilverStripe\Core\Injector\Injector:
-  Fractas\CookiePolicy\CookiePolicy:
-    class: AppCookiePolicy
 ilateral\SilverStripe\Users\Users:
   require_verification: true
   send_verification_email: true

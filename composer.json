@@ -4,38 +4,14 @@
     "description": "SilverStripe recipe for fully featured page and asset content editing",
     "homepage": "http://silverstripe.org",
     "license": "BSD-3-Clause",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/mlewis-everley/silverstripe-hasoneautocompletefield"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/mlewis-everley/silverstripe-file-listing"
-        }
-    ],
     "require": {
         "silverstripe/recipe-cms": "^1.0",
-        "silverstripe/blog": "master",
         "silverstripe/userforms": "5.*",
-        "silverstripe/widgets": "master",
-        "silverstripe/tagfield": "^2.0",
         "silverstripe/silverstripe-omnipay": "dev-master",
-        "colymba/gridfield-bulk-editing-tools": "dev-master",
-        "nathancox/hasoneautocompletefield": "2.x-dev",
         "wilr/silverstripe-googlesitemaps": "dev-master",
         "axllent/silverstripe-scaled-uploads": "^2.1",
-        "i-lateral/silverstripe-childhubpage": "^2.0",
-        "jonom/focuspoint": "ss4-upgrade-dev",
-        "heyday/silverstripe-gridfieldversionedorderablerows": "ss4-upgrade-dev",
-        "symbiote/silverstripe-gridfieldextensions": "3.1 as 3.0.x-dev",
-        "i-lateral/silverstripe-carousel": "2.x-dev",
-        "i-lateral/silverstripe-custommenus": "2.x-dev",
         "i-lateral/silverstripe-searchable": "2.x-dev",
         "i-lateral/silverstripe-users": "2.x-dev",
-        "i-lateral/silverstripe-gallery": "2.x-dev",
-        "fractas/cookiepolicy": "^2.0",
-        "purplespider/file-listing": "4.0.x-dev",
         "silvercommerce/catalogue-admin": "1.*@dev",
         "silvercommerce/catalogue-frontend": "1.*@dev",
         "silvercommerce/tax-admin": "1.*@dev",
@@ -48,18 +24,7 @@
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7",
-        "omnipay/paypal": "^2.5",
-        "omnipay/dummy": "^2.1",
-        "omnipay/paymentexpress": "^2.1"
-    },
-    "extra": {
-        "project-files": [
-            ".htaccess",
-            "app/*",
-            "themes/custom/*",
-            "index.php",
-            "web.config"
-        ]
+        "omnipay/dummy": "^2.1"
     },
     "config": {
         "process-timeout": 600

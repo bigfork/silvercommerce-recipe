@@ -1,6 +1,3 @@
-# ignore workspace files
-/.vscode/
-
 # ignore cache folder
 /silverstripe-cache/
 
@@ -27,7 +24,7 @@
 /silverstripe-assets/
 /silverstripe-errorpage/
 /siteconfig/
-/themes/bootstrap/
+/themes/silvercommerce/
 /themes/simple/
 /versioned/
 /testsession/

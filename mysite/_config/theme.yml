@@ -3,11 +3,8 @@ Name: mytheme
 ---
 SilverStripe\View\SSViewer:
   themes:
-#    - 'custom-simple'
-#    - 'simple'
     - 'custom-commerce'
     - 'silvercommerce'
-#    - 'bootstrap'
     - '$default'
 SilverStripe\i18n\i18n:
   default_locale: 'en_GB'
