@@ -20,6 +20,12 @@ class AppSiteConfig extends DataExtension
         'ContactPage' => ContactPage::class
     ];
 
+    private static $owns = [
+        'Logo',
+        'Icon',
+        'Background'
+    ];
+
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldsToTab(
