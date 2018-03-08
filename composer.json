@@ -31,6 +31,7 @@
     },
     "extra": {
         "project-files": [
+            ".gitignore",
             ".htaccess",
             "mysite/*",
             "index.php",
