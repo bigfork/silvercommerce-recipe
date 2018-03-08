@@ -16,8 +16,7 @@ class AppSiteConfig extends DataExtension
     private static $has_one = [
         'Logo' => Image::class,
         'Icon' => Image::class,
-        'Background' => Image::class,
-        'ContactPage' => ContactPage::class
+        'Background' => Image::class
     ];
 
     public function updateCMSFields(FieldList $fields)
@@ -33,25 +32,12 @@ class AppSiteConfig extends DataExtension
                     "Icon",
                     "Site Icon"
                 )->setRightTitle('Used for favicon and touch icons - this must be a .png or .gif')
-                ->setAllowedExtensions(['png', 'gif'])
-            ],
-            'Tagline'
-        );
-
-        $fields->addFieldsToTab(
-            'Root.Main',
-            [
-
+                ->setAllowedExtensions(['png', 'gif']),
                 UploadField::create(
                     "Background",
                     "Site Background"
                 ),
-                CheckboxField::create("TileBackground"),
-                TreeDropdownField::create(
-                    "ContactPageID",
-                    "Link to 'contact' page",
-                    'ContactPage'
-                )
+                CheckboxField::create("TileBackground")
             ]
         );
     }

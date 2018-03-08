@@ -1,45 +1,36 @@
 <?php
 
-use \SilverStripe\ORM\FieldType\DBVarchar;
-use \SilverStripe\ORM\FieldType\DBHTMLText;
-use \SilverStripe\ORM\FieldType\DBText;
+use SilverStripe\ORM\FieldType\DBVarchar;
+use SilverStripe\ORM\FieldType\DBHTMLText;
+use SilverStripe\ORM\FieldType\DBText;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\TextareaField;
+use SilverStripe\SiteConfig\SiteConfig;
 
 class ContactPage extends Page
 {
-    private static $db = [
-        "PhoneNumber"   => "Varchar(20)",
-        "Email"         => "Varchar(50)",
-        "Address"       => "Text",
-        "MapEmbed"      => "HTMLText"        
+    private static $casting = [
+        "PhoneNumber"   => "Varchar",
+        "Email"         => "Varchar",
+        "Address"       => "Text"        
     ];
 
-    private static $has_one = [];
-
-    public function getCMSFields()
+    public function getPhoneNumber()
     {
-        $fields = parent::getCMSFields();
+        $config = SiteConfig::current_site_config();
+        return $config->ContactPhone;
+    }
 
-        $fields->addFieldsToTab(
-            'Root.ContactInfo',
-            [
-                TextField::create(
-                    'PhoneNumber'
-                ),
-                EmailField::create(
-                    'Email'
-                ),
-                TextareaField::create(
-                    'Address'
-                ),
-                TextareaField::create(
-                    'MapEmbed'
-                )
-            ]
-        );
+    public function getEmail()
+    {
+        $config = SiteConfig::current_site_config();
+        return $config->ContactEmail;
+    }
 
-        return $fields;
+    public function getAddress()
+    {
+        $config = SiteConfig::current_site_config();
+        return $config->ContactAddress;
     }
 }

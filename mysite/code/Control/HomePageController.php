@@ -27,22 +27,4 @@ class HomePageController extends PageController
         // You can include any CSS or JS required by your project here.
         // See: https://docs.silverstripe.org/en/developer_guides/templates/requirements/
     }
-
-    public function getRenderedSections()
-    {
-        $pages = $this->Sections()->sort('HomeSort','ASC');
-		$sections = ArrayList::create();
-		if ($pages) {
-			foreach ($pages as $page) {
-				$page->Layout = $page->renderWith([
-                    $page->ClassName.'_homepage',
-                    'Page_homepage',
-                    'HomePage_section'
-                ]);
-				
-				$sections->push($page);
-			}
-		}
-		return $sections;
-    }
 }

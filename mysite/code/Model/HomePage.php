@@ -2,10 +2,10 @@
 
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
-use Heyday\GridFieldVersionedOrderableRows\GridFieldVersionedOrderableRows;
-use SilverStripe\Lumberjack\Forms\GridFieldSiteTreeEditButton;
-use SilverStripe\Lumberjack\Forms\GridFieldSiteTreeState;
 use SilverStripe\Forms\GridField\GridFieldEditButton;
+use SilverCommerce\CatalogueAdmin\Forms\GridField\GridFieldConfig_CatalogueRelated;
+use SilverCommerce\CatalogueAdmin\Model\CatalogueProduct;
+use SilverCommerce\CatalogueAdmin\Model\CatalogueCategory;
 
 class HomePage extends Page
 {
@@ -14,26 +14,30 @@ class HomePage extends Page
     private static $has_one = [];
 
     private static $has_many = [
-        'Sections' => Page::class
+        'FeaturedProducts' => Product::class,
+        'FeaturedCategories' => Category::class
     ];
 
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
 
-        $config = GridFieldConfig_RelationEditor::create();
-        $config->addComponent(new GridFieldVersionedOrderableRows('HomeSort'))
-            ->removeComponentsByType(GridFieldEditButton::class)
-            ->addComponent(new GridFieldSiteTreeState())
-            ->addComponent(new GridFieldSiteTreeEditButton());
+        $fields->addFieldToTab(
+            'Root.Products',
+            GridField::create(
+                'FeaturedProducts',
+                'Products',
+                $this->FeaturedProducts()
+            )->setConfig(GridFieldConfig_CatalogueRelated::create(CatalogueProduct::class))
+        );
 
         $fields->addFieldToTab(
-            'Root.Sections',
+            'Root.Categories',
             GridField::create(
-                'Sections',
-                'Sections',
-                $this->Sections()
-            )->setConfig($config)
+                'FeaturedCategories',
+                'Categories',
+                $this->FeaturedCategories()
+            )->setConfig(GridFieldConfig_CatalogueRelated::create(CatalogueCategory::class))
         );
         
         return $fields;
