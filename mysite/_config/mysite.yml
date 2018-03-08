@@ -2,12 +2,7 @@
 Name: application
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
-  project: app
-
-## EXTENSIONS ##
-SilverStripe\SiteConfig\SiteConfig:
-  extensions:
-    - AppSiteConfig
+  project: mysite
 
 ## CONFIG ##
 Axllent\ScaledUploads\ScaledUploads:
@@ -20,8 +15,13 @@ ilateral\SilverStripe\Searchable\Searchable:
     "Category": ["Title","Content","URLSegment"]
 ilateral\SilverStripe\CustomMenus\Model\CustomMenuLink:
   base_classes:
-    'Category': "A Product Category"
+    "Category": "A Product Category"
     "Product": "A Product"
 ilateral\SilverStripe\Users\Users:
-  require_verification: true
-  send_verification_email: true
+  require_verification: false
+  send_verification_email: false
+
+## EXTENSIONS ##
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - AppSiteConfig
