@@ -1,8 +1,6 @@
 ---
-Name: application
+Name: appconfig
 ---
-SilverStripe\Core\Manifest\ModuleManifest:
-  project: mysite
 
 ## CONFIG ##
 Axllent\ScaledUploads\ScaledUploads:
