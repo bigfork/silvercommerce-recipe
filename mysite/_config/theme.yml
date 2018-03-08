@@ -3,6 +3,7 @@ Name: mytheme
 ---
 SilverStripe\View\SSViewer:
   themes:
+    - 'custom'
     - 'silvercommerce'
     - '$default'
 SilverStripe\i18n\i18n:
