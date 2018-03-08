@@ -29,6 +29,14 @@
     "config": {
         "process-timeout": 600
     },
+    "extra": {
+        "project-files": [
+            ".htaccess",
+            "mysite/*",
+            "index.php",
+            "web.config"
+        ]
+    },
     "prefer-stable": true,
     "minimum-stability": "dev"
 }
