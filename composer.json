@@ -12,7 +12,7 @@
         "axllent/silverstripe-scaled-uploads": "^2.1",
         "i-lateral/silverstripe-searchable": "^2.0",
         "i-lateral/silverstripe-users": "^2.0",
-        "silvercommerce/catalogue-admin": "1.*@dev",
+        "silvercommerce/catalogue-admin": "^1.0",
         "silvercommerce/catalogue-frontend": "1.*@dev",
         "silvercommerce/orders-admin": "1.*@dev",
         "silvercommerce/shoppingcart": "1.*@dev",
