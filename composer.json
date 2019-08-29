@@ -4,6 +4,12 @@
     "description": "SilverStripe recipe for fully featured page and asset content editing",
     "homepage": "http://silverstripe.org",
     "license": "BSD-3-Clause",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Makreig/Silverstripe-SEO.git"
+        }
+    ],
     "require": {
         "silverstripe/recipe-plugin": "^1.2",
         "silverstripe/recipe-core": "4.*@stable",
@@ -24,7 +30,7 @@
         "silvercommerce/quantityfield": "^1.0",
         "silvercommerce/silvercommerce-theme": "dev-master",
         "silverstripe/userforms": "^5.0",
-        "wilr/silverstripe-googlesitemaps": "^2.0",
+        "cyber-duck/silverstripe-seo": "4.3.x-dev",
         "axllent/silverstripe-scaled-uploads": "^2.1"
     },
     "require-dev": {
