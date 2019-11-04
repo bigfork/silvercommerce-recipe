@@ -44,7 +44,7 @@ class HomePage extends Page
                 'FeaturedCategories',
                 'Categories',
                 $this->FeaturedCategories()
-            )->setConfig(GridFieldConfig_CatalogueRelated::create(Category::class))
+            )->setConfig($config)
         );
         
         return $fields;
