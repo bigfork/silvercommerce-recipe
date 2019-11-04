@@ -6,6 +6,7 @@ use SilverStripe\Forms\GridField\GridFieldEditButton;
 use SilverCommerce\CatalogueAdmin\Forms\GridField\GridFieldConfig_CatalogueRelated;
 use SilverCommerce\CatalogueAdmin\Model\CatalogueProduct;
 use SilverCommerce\CatalogueAdmin\Model\CatalogueCategory;
+use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
 class HomePage extends Page
 {
@@ -22,14 +23,20 @@ class HomePage extends Page
     {
         $fields = parent::getCMSFields();
 
+        $config = GridFieldConfig_CatalogueRelated::create(Product::class);
+        $config->addComponent(new GridFieldOrderableRows('HomeSort'));
+
         $fields->addFieldToTab(
             'Root.Products',
             GridField::create(
                 'FeaturedProducts',
                 'Products',
                 $this->FeaturedProducts()
-            )->setConfig(GridFieldConfig_CatalogueRelated::create(CatalogueProduct::class))
+            )->setConfig($config)
         );
+
+        $config = GridFieldConfig_CatalogueRelated::create(Category::class);
+        $config->addComponent(new GridFieldOrderableRows('HomeSort'));
 
         $fields->addFieldToTab(
             'Root.Categories',
@@ -37,7 +44,7 @@ class HomePage extends Page
                 'FeaturedCategories',
                 'Categories',
                 $this->FeaturedCategories()
-            )->setConfig(GridFieldConfig_CatalogueRelated::create(CatalogueCategory::class))
+            )->setConfig(GridFieldConfig_CatalogueRelated::create(Category::class))
         );
         
         return $fields;

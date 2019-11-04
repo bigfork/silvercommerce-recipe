@@ -5,8 +5,9 @@ use SilverCommerce\CatalogueAdmin\Model\CatalogueCategory;
 class Category extends CatalogueCategory 
 {
     
-    private static $db = [];
-
+    private static $db = [
+        'HomeSort' => 'Int'
+    ];
 
     private static $has_one = [
         "HomePage" => HomePage::class
