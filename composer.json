@@ -28,9 +28,6 @@
         "silvercommerce/tax-admin": "^1.4",
         "silvercommerce/quantityfield": "^1.0",
         "silvercommerce/silvercommerce-theme": "^1.1",
-        "silverstripe/userforms": "^5.0",
-        "hubertusanton/silverstripe-seo": "^4.0",
-        "axllent/silverstripe-scaled-uploads": "^2.1",
         "symbiote/silverstripe-gridfieldextensions": "^3.1"
     },
     "require-dev": {
