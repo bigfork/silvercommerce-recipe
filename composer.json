@@ -28,11 +28,8 @@
         "silvercommerce/contact-admin": "^1.0",
         "silvercommerce/tax-admin": "^1.0",
         "silvercommerce/quantityfield": "^1.0",
-        "silvercommerce/silvercommerce-theme": "dev-master",
-        "silverstripe/userforms": "^5.0",
-        "hubertusanton/silverstripe-seo": "^4.0",
-        "axllent/silverstripe-scaled-uploads": "^2.1",
-        "symbiote/silverstripe-gridfieldextensions": "3.1 as 3.0.x-dev"
+        "silvercommerce/silvercommerce-theme": "^1.1",
+        "symbiote/silverstripe-gridfieldextensions": "^3.1"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7",
