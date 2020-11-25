@@ -32,7 +32,6 @@
         "symbiote/silverstripe-gridfieldextensions": "^3.1"
     },
     "require-dev": {
-        "phpunit/PHPUnit": "^5.7",
         "omnipay/dummy": "^2.1"
     },
     "config": {
