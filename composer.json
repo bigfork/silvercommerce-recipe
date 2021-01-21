@@ -1,22 +1,16 @@
 {
     "name": "silvercommerce/silvercommerce-recipe",
     "type": "silverstripe-recipe",
-    "description": "SilverStripe recipe for fully featured page and asset content editing",
+    "description": "eCommerce system built on the SilverStripe CMS",
     "homepage": "http://silverstripe.org",
     "license": "BSD-3-Clause",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:Makreig/Silverstripe-SEO.git"
-        }
-    ],
     "require": {
         "silverstripe/recipe-core": "4.*@stable",
         "silverstripe/asset-admin": "1.*@stable",
         "silverstripe/cms": "4.*@stable",
         "silverstripe/errorpage": "1.*@stable",
         "silverstripe/silverstripe-omnipay": "^3.0",
-        "i-lateral/silverstripe-searchable": "^2.0",
+        "i-lateral/silverstripe-searchable": "^3.0",
         "i-lateral/silverstripe-users": "^2.0",
         "silvercommerce/catalogue-admin": "^1.1",
         "silvercommerce/catalogue-frontend": "^1.0",
@@ -31,7 +25,7 @@
         "symbiote/silverstripe-gridfieldextensions": "^3.1"
     },
     "require-dev": {
-        "omnipay/dummy": "^2.1"
+        "omnipay/dummy": "^3.0"
     },
     "config": {
         "process-timeout": 600
