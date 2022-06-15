@@ -1,28 +1,23 @@
-## SilverStripe CMS Recipe
+# Core SilverCommerce Recipe
 
-Base page and asset content-editing recipe for a SilverStripe ([http://silverstripe.org](http://silverstripe.org))
-installation. This includes the modules:
+Install recipie for the SilverStripe powered SilverCommerce
+ecommerce system.
 
-Provided by [silverstripe/recipe-core]:
+## Installing SilverCommerce
 
- * [framework](http://github.com/silverstripe/silverstripe-framework): Module including the base framework
- * [config](https://github.com/silverstripe/silverstripe-config): Core config library
- * [assets](http://github.com/silverstripe/silverstripe-assets): Filesystem module
+When starting a new project, create from this recipe using 
+composer:
 
-Provided by [silverstripe/recipe-cms]:
+    $ composer create-project silvercommerce/silvercommerce-recipe ./my-project
 
- * [admin](http://github.com/silverstripe/silverstripe-admin)
- * [asset-admin](http://github.com/silverstripe/silverstripe-asset-admin)
- * [campaign-admin](http://github.com/silverstripe/silverstripe-campaign-admin)
- * [cms](http://github.com/silverstripe/silverstripe-cms)
- * [errorpage](http://github.com/silverstripe/silverstripe-errorpage)
- * [reports](http://github.com/silverstripe/silverstripe-reports)
- * [graphql](http://github.com/silverstripe/silverstripe-graphql)
- * [siteconfig](http://github.com/silverstripe/silverstripe-siteconfig)
- * [versioned](http://github.com/silverstripe/silverstripe-versioned)
+SilverCommerce can alternatively be added to any existing 
+project (even if not created on a silverstripe base project)
 
-This can be either added to an existing project or used as a project base for creating a
-fully featured SilverStripe CMS project.
+    $ composer init
+    $ composer require silvercommerce/silvercommerce-recipe
 
-See the [recipe plugin](https://github.com/silverstripe/recipe-plugin) page for instructions on how
-SilverStripe recipes work.
+## More Info
+
+For more information on SilverStripe recipies, see the
+[recipe plugin](https://github.com/silverstripe/recipe-plugin)
+project.
