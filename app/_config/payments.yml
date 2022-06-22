@@ -1,5 +1,5 @@
 ---
-Name: payment
+Name: apppayment
 ---
 SilverStripe\Omnipay\Model\Payment:
   file_logging: "verbose"
