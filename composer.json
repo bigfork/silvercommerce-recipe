@@ -12,6 +12,7 @@
         "silverstripe/silverstripe-omnipay": "^3.0",
         "i-lateral/silverstripe-searchable": "^3.0",
         "i-lateral/silverstripe-users": "^2.0",
+        "silvercommerce/dashboard": "^1.0",
         "silvercommerce/catalogue-admin": "^1.1",
         "silvercommerce/catalogue-frontend": "^1.0",
         "silvercommerce/orders-admin": "^1.3",
