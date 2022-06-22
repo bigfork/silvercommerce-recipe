@@ -1,13 +1,14 @@
 <?php
 
-use SilverStripe\Forms\TreeDropdownField;
+namespace App\Extensions;
+
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Assets\Image;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Forms\CheckboxField;
 
-class AppSiteConfig extends DataExtension
+class SiteConfigExtension extends DataExtension
 {
     private static $db = [
         'TileBackground' => 'Boolean'
