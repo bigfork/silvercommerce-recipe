@@ -5,10 +5,8 @@
     "homepage": "http://silverstripe.org",
     "license": "BSD-3-Clause",
     "require": {
-        "silverstripe/recipe-core": "4.*@stable",
-        "silverstripe/asset-admin": "1.*@stable",
-        "silverstripe/cms": "4.*@stable",
-        "silverstripe/errorpage": "1.*@stable",
+        "silverstripe/recipe-core": "^4.2",
+        "silverstripe/recipe-cms": "^4.2",
         "silverstripe/silverstripe-omnipay": "^3.0",
         "i-lateral/silverstripe-searchable": "^3.0",
         "i-lateral/silverstripe-users": "^2.0",
@@ -36,10 +34,17 @@
         "project-files": [
             ".gitignore",
             ".htaccess",
-            "app/*",
+            "app/_config/*",
+            "app/src/*",
             "index.php",
             "web.config"
-        ]
+        ],
+        "public-files": [
+            ".htaccess",
+            "web.config",
+            "index.php"
+        ],
+        "resources-dir": "_resources"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
