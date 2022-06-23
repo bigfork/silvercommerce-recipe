@@ -2,6 +2,8 @@
 /.env
 /vendor/
 /resources/
+/_resources/
 /public/resources/
+/public/_resources/
 /themes/simple/
 /themes/silvercommerce/
