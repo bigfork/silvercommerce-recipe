@@ -7,7 +7,7 @@ ilateral\SilverStripe\Searchable\Searchable:
     "Product": ["Title","Content","URLSegment"]
     "Category": ["Title","Content","URLSegment"]
 
-ilateral\SilverStripe\CustomMenus\Model\CustomMenuLink:
+dft\SilverStripe\CustomMenus\Model\CustomMenuLink:
   base_classes:
     "Category": "A Product Category"
     "Product": "A Product"
